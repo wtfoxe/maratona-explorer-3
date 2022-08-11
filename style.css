@@ -7,6 +7,8 @@
 body {
    background-color: #ffedd5;
    font-family: 'Roboto', sans-serif;
+   width: 100vw;
+   height: 100vh;
 }
 
 ul {
@@ -14,7 +16,6 @@ ul {
 }
 
 /* FONTS */
-
 h1,
 h2,
 h3,
@@ -27,12 +28,12 @@ h3,
 /* HEADER */
 header{
    text-align: center;
-   padding: 32px 0;
+   padding: 28px 0 14px 0;
 }
 
 header,
 section {
-   max-width: 300px;
+   max-width: 400px;
    margin: 0 auto;
 }
 
@@ -50,7 +51,9 @@ header p {
    color: rgba(0, 0, 0, 0.7);
    font-size: 14px;
    line-height: 16px;
+   margin-bottom: 6px;
 }
+
 
 /* SECTION */
 section {
@@ -71,6 +74,7 @@ section h2 {
 ul li {
    display: flex;
    margin-bottom: 16px;
+   justify-content: space-between;
 }
 
 li .details{
@@ -87,4 +91,35 @@ li .details{
    color: rgba(0, 0, 0, 0.6);
    font-size: 14px;
    line-height: 21px;
+}
+
+hr {
+   max-width: 400px;
+   margin: auto;
+   border: .5px solid #773e00; 
+   background-color: #773e00;
+   opacity: .2;
+}
+
+/* FOOTER */
+footer {
+   height: 34px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+footer p {
+   font-size: 14px;
+   font-weight: 600;
+   opacity: .8;
+}
+
+footer a {
+   text-decoration: none;
+   color: #773e00;
+}
+
+footer a:hover {
+   color: #cb7410d8;
 }
